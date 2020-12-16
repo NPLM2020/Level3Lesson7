@@ -1,3 +1,5 @@
+import annotations.AfterSuite;
+import annotations.BeforeSuite;
 import annotations.Test;
 
 public class TestClass {
@@ -7,7 +9,7 @@ public class TestClass {
         System.out.println("\ntest 1 has completed!");
     }
 
-    @Test(order = 2)
+    @AfterSuite
     public void test2() {
         System.out.println("\ntest 2 has completed!");
     }
@@ -17,7 +19,7 @@ public class TestClass {
         System.out.println("\ntest 3 has completed!");
     }
 
-    @Test(order = 4)
+    @BeforeSuite
     public void test4() {
         System.out.println("\ntest 4 has completed!");
     }
